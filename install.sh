@@ -52,7 +52,7 @@ EOF
 }
 
 upload_proxy() {
-    local PASS=$(random)
+    local PASS="thangnt"
     zip --password $PASS proxy.zip proxy.txt
     URL=$(curl -s --upload-file proxy.zip https://transfer.sh/proxy.zip)
 
